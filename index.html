@@ -21,7 +21,7 @@
         <div class="row">
             <div class="col-md-2">&nbsp;</div>
             <div class="col-md-8">
-                <div class="jumbotron jumbotron-fluid">
+                <div class="jumbotron jumbotron-fluid" style="text-align: center; margin-top:10px; padding: 20px 60px 30px 60px">
                     <div class="container">
                         <h1 class="display-4">Train Time</h1>
                         <h3 id="currently"></h3>
@@ -34,7 +34,7 @@
             <div class="col-md-2">&nbsp;</div>
             <div class="col-md-8">
                 <!-- table for displaying -->
-                <div class="panel panel-default">
+                <div class="panel panel-primary">
                         <div class="panel-heading">Current Train Schedule</div>
                         <div class="panel-body">
                             <table class="table" id="train-schedule">
@@ -45,6 +45,7 @@
                                         <th scope="col">Frequency (min)</th>
                                         <th scope="col">Next Arrival</th>
                                         <th scope="col">Minutes Away</th>
+                                        <!-- <th scope="col">Function</th> -->
                                       </tr>
                                     </thead>
                                     <tbody>
@@ -58,7 +59,7 @@
         <div class="row">
             <div class="col-md-2">&nbsp;</div>
             <div class="col-md-8">
-                    <div class="panel panel-default">
+                    <div class="panel panel-primary">
                             <div class="panel-heading">Add Train</div>
                             <div class="panel-body">
                                 <form>
@@ -71,14 +72,14 @@
                                         <input type="text" class="form-control" id="destination-input">
                                     </div>
                                     <div class="form-group">
-                                        <label for="start-date">First Train Time (HH:mm - military time)</label>
+                                        <label for="start-date">First Train Time</label>
                                         <input type="time" class="form-control" id="time-input" placeholder="MM/DD/YYYY">
                                     </div>
                                     <div class="form-group">
                                         <label for="monthly-rate">Frequency (min)</label>
                                         <input type="number" class="form-control" id="frequency-input">
                                     </div>
-                                    <button id="submit">Submit</button>
+                                    <button id="submit" type="button" class="btn btn-primary">Submit</button>
                                 </form>
                             </div>
                           </div>
